@@ -1,7 +1,7 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from .models import MenuItem
-from .serializers import MenuItemSerializer
+from LittleLemonAPI.models import MenuItem
+from LittleLemonAPI.serializers import MenuItemSerializer
 class MenuViewTest(TestCase):
     def setUp(self):
         self.client = Client()

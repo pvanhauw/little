@@ -21,3 +21,5 @@ class SingleBookingView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
 
+def index(request):
+    return render(request, 'index.html', {})
